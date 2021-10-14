@@ -10823,11 +10823,6 @@ end
 end
 
 
-if text and text:match("^تغير رد مطور الاساسي (.*)$") and Manager(msg) then
-local Teext = text:match("^تغير رد مطور الاساسي (.*)$") 
-database:set(bot_id.."Sudo:Rd"..msg.chat_id_,Teext)
-send(msg.chat_id_, msg.id_," *✺│تم تغير رد المطور الاساسي الى »* "..Teext)
-end
 if text and text:match("^تغير رد المطور (.*)$") and Manager(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
 database:set(bot_id.."Sudo:Rd"..msg.chat_id_,Teext)
