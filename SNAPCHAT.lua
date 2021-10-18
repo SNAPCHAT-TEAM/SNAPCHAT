@@ -2730,7 +2730,7 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sɴᴀᴘᴄʜᴀᴛ \n\n[✺│ѕɴᴀᴘ ᴄʜᴀɴɴᴇʟ](http://t.me/EE_RAP)\n\n[✺│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/Snap_source)\n\n[✺│𝗌𝗇𝖺𝗉 ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/EEF69)\n\n[✺│ʙᴏᴛ 𝗌𝗇𝖺𝗉](http://t.me/Twsnap_BoT)"
+Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sɴᴀᴘᴄʜᴀᴛ \n\n[✺│ѕɴᴀᴘ ᴄʜᴀɴɴᴇʟ](http://t.me/EE_RAP)\n\n[✺│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/Snap_source)\n\n[✺│𝗌𝗇𝖺𝗉 ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/X_musl)\n\n[✺│ʙᴏᴛ 𝗌𝗇𝖺𝗉](http://t.me/Twsnap_BoT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𓅛︙𝗌𝗈𝗎𝗋𝖼𝖾 𝗌𝗇𝖺𝗉',url="t.me/Snap_source"}},
