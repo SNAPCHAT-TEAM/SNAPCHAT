@@ -11,7 +11,7 @@ sudo_users = {SUDO,2048779971}
 print([[
  ✓                     ✓
  ✓                     ✓
-> CH › @EE_RAP
+> CH › @venom_source
 ~> DEVELOPER › @EEF23
 ]])
 if io.open("library/redis.lua","r") then
@@ -7951,7 +7951,7 @@ local text =
 ' }\n'..'*✺│ الايدي »* { '..idgp..
 ' }\n'..'*✺│ الايدي بالصوره »* { '..idph..
 ' }\n'..'*✺│ الرفع »* { '..setadd..
-' }\n'..'*✺│ الحظر »* { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n *✺│ CH » @Snap_source*\n'
+' }\n'..'*✺│ الحظر »* { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n *✺│ CH » @Venom_source*\n'
 send(msg.chat_id_, msg.id_,text) 
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -11062,13 +11062,13 @@ Text = [[
 *⌔م9 ◂ اوامر مطور الاساسي* 
 *⌔م10 ◂ اوامر الاعضاء*
 ٴ*◐•━━━━━━ 𝑺𝑵 ━━━━━━━•◐*ٴ
-[⍆𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋](t.me/Snap_source) 
+[⍆𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈](t.me/Venom_source) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
 {{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
-{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋', url="t.me/Snap_source"}},
+{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈', url="t.me/venom_source"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -11498,14 +11498,14 @@ local Teext =[[
 *⌔~⪼ ءall*
 *⌔~⪼ لحساب العمر بالتنسيق التالي مثال : احسب 1996/1/17*
  *ٴ◐•━━━━━━ 𝑺𝑵 ━━━━━━━•◐*
-[⍆ 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋](t.me/Snap_source)
+[⍆ 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
 {{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
-{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋', url="t.me/Snap_source"}},
+{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈', url="t.me/venom_source"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -11533,14 +11533,14 @@ local Teext =[[
 *⌔~⪼ وصف*
 *⌔~⪼ تكرار + عدد*
  *ٴ◐•━━━━━━ 𝑺𝑵 ━━━━━━━•◐*
-[⍆ 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋](t.me/Snap_source)
+[⍆ 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
 {{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
-{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋', url="t.me/Snap_source"}},
+{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈', url="t.me/venom_source"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -11578,14 +11578,14 @@ local Teext =[[
 *⌔~⪼ امر *
 *⌔~⪼ الاوامر المضافه*
 *ٴ◐•━━━━━━ 𝑺𝑵 ━━━━━━━•◐*
-[⍆ 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋](t.me/Snap_source)
+[⍆ 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
 {{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
-{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋', url="t.me/Snap_source"}},
+{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈', url="t.me/venom_source"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -11625,14 +11625,14 @@ local Teext =[[
 *⌔~⪼ تغير امر الاوامر*
 *⌔~⪼ تغير امر م1 ~ الئ م10*
 *ٴ◐•━━━━━━ 𝑺𝑵 ━━━━━━━•◐*
-[⍆ 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋](t.me/Snap_source)
+[⍆ 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
 {{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
-{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙎𝙉𝘼𝙋', url="t.me/Snap_source"}},
+{{text = '𓅛 𝙏𝙀𝘼𝙈 𝙑𝙀𝙉𝙊𝙈', url="t.me/venom_source"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
