@@ -2730,10 +2730,10 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sɴᴀᴘᴄʜᴀᴛ \n\n[✺│ѕɴᴀᴘ ᴄʜᴀɴɴᴇʟ](http://t.me/EE_RAP)\n\n[✺│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/Snap_source)\n\n[✺│𝗌𝗇𝖺𝗉 ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/X_musl)\n\n[✺│ʙᴏᴛ 𝗌𝗇𝖺𝗉](http://t.me/Twsnap_BoT)"
+Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ 𝙑𝙀𝙉𝙊𝙈 \n\n[✺│ 𝙑𝙀𝙉𝙊𝙈 ᴄʜᴀɴɴᴇʟ](http://t.me/Venom_source)\n\n[✺│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venom_source)\n\n[✺│ 𝙑𝙀𝙉𝙊𝙈 ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/EEF23)\n\n[✺│ʙᴏᴛ𝙑𝙀𝙉𝙊𝙈](http://t.me/wkwvbot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓅛︙𝗌𝗈𝗎𝗋𝖼𝖾 𝗌𝗇𝖺𝗉',url="t.me/Snap_source"}},
+{{text = '𓅛︙𝗌𝗈𝗎𝗋𝖼𝖾 𝙑𝙀𝙉𝙊𝙈',url="t.me/venom_source"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Snap_source&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
