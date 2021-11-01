@@ -2727,14 +2727,16 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ\n\n[-  ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ  .](http://t.me/venom_source)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/venomfile)\n\n[-  ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/wKwvv)\n\n[-  ʙᴏᴛ ᴠᴇɴᴏᴍ ](http://t.me/wKwvBoT)"
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
+local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
+data = JSON.decode(url)
+Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴠᴇɴᴏᴍ \n\n[𖤓│ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ](http://t.me/SNAPfile)\n\n[𖤓│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venom_source)\n\n[𖤓│ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/wKwvv)\n\n[𖤓│ᴛᴡ ʙᴏᴛ ](http://t.me/wkwvbot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫: ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ .',url="https://t.me/HMBots/239"}},
+{{text = '𓅛︙ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ',url="t.me/venom_source"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/HMBots&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/venom_source&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -4092,7 +4094,6 @@ os.execute("rm -fr File_Bot/*")
 send(msg.chat_id_,msg.id_," *𖤓│تم مسح الملفات*")
 return false
 end
-
 if text == "المطور" or text == "مطور" then
 local TEXT_SUD = database:get(bot_id..'Rocks:TEXT_SUDO')
 if TEXT_SUDO then 
