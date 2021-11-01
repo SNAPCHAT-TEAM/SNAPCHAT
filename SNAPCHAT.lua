@@ -11,8 +11,8 @@ sudo_users = {SUDO,2048779971}
 print([[
  ✓                     ✓
  ✓                     ✓
-> CH › @SNAPfile
-~> DEVELOPER › @EEF69
+> CH › @venomfile
+~> DEVELOPER › @wKwvv
 ]])
 if io.open("library/redis.lua","r") then
 io.close(io.open("library/redis.lua","r"))
@@ -2727,16 +2727,14 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴠᴇɴᴏᴍ \n\n[𖤓│ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ](http://t.me/venom_source)\n\n[𖤓│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venomfile)\n\n[𖤓│ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/wKwvv)\n\n[𖤓│ᴛᴡ ʙᴏᴛ ](http://t.me/wkwvbot)"
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
+Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ\n\n[-  ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ  .](http://t.me/venom_source)\n\n[-  ɪɴғᴏ sᴏᴜʀᴄᴇ .](http://t.me/venomfile)\n\n[-  ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ  .](http://t.me/wKwvv)\n\n[-  ʙᴏᴛ ᴠᴇɴᴏᴍ ](http://t.me/wKwvBoT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓅛︙ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ',url="t.me/venom_source"}},
+{{text = '✫: ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ .',url="https://t.me/HMBots/239"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/venom_source&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/HMBots&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
@@ -4095,6 +4093,26 @@ send(msg.chat_id_,msg.id_," *𖤓│تم مسح الملفات*")
 return false
 end
 
+if text == "المطور" or text == "مطور" then
+local TEXT_SUD = database:get(bot_id..'Rocks:TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
+tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = SUDO,offset_ = 0,limit_ = 1},function(arg,getpro) 
+if getpro.photos_[0] then
+Name = '*المطور ~⪼* ['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+Name = Name..'*البايو ~⪼* ['..getbio(SUDO)..']\n'
+keyboard = {}
+keyboard.inline_keyboard = {{{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""}},}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..getpro.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+else
+send(msg.chat_id_, msg.id_,Name,1, 'md')
+end
+end,nil)   
+end,nil)   
+end
 if text == ("رفع مطور") and msg.reply_to_message_id_ and DevSNAPCHATW(msg) then
 function start_function(extra, result, success)
 if AddChannel(msg.sender_user_id_) == false then
@@ -4751,6 +4769,34 @@ end,nil)
 end
 end
 end,nil)   
+end
+if text == "المنشئ" then
+tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
+local admins = data.members_
+for i=0 , #admins do
+if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
+owner_id = admins[i].user_id_
+tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
+if b.first_name_ == false then
+send(msg.chat_id_, msg.id_," *⋄︙حساب المنشئ محذوف*")
+return false  
+end
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = owner_id,offset_ = 0,limit_ = 1},function(arg,getpro) 
+if getpro.photos_[0] then
+Name = '*المنشئ ⇠* ['..b.first_name_..'](tg://user?id='..b.id_..')\n'
+Name = Name..'*البايو ⇠* ['..getbio(owner_id)..']\n'
+keyboard = {}
+keyboard.inline_keyboard = {{{text = ''..b.first_name_..'', url = "https://t.me/"..b.username_..""}},}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..getpro.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+else
+send(msg.chat_id_,msg.id_,Name)
+end
+end,nil)   
+end,nil)   
+end
+end
+end,nil)  
 end
 if text == "رفع منشئ" and msg.reply_to_message_id_ and BasicConstructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
