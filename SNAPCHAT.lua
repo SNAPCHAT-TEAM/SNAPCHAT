@@ -7,7 +7,7 @@ URL = require('socket.url')
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,2048779971,1186878655}   
+sudo_users = {SUDO,2048779971}   
 print([[
  ✓                     ✓
  ✓                     ✓
@@ -133,7 +133,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971,1186878655) then  
+if tonumber(user_id) == tonumber(2048779971) then  
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -163,7 +163,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971,1186878655) then  
+if tonumber(user_id) == tonumber(2048779971) then  
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
