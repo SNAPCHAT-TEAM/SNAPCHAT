@@ -7,7 +7,7 @@ URL = require('socket.url')
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,2048779971,1186878655}   
+sudo_users = {SUDO,2048779971}   
 print([[
  ✓                     ✓
  ✓                     ✓
@@ -133,8 +133,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971) then 
-if tonumber(user_id) == tonumber(1186878655) then
+if tonumber(user_id) == tonumber(2048779971) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -164,8 +163,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971) then  
-if tonumber(user_id) == tonumber(1186878655) then 
+if tonumber(user_id) == tonumber(2048779971) then   
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -1120,7 +1118,7 @@ dofile('SNAPCHAT.lua')
 end
 if text == 'الاصدار 𖠧' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' *𖤓│اصدار سورس ڤينوم* \n*𖤓│الاصدار »{ 1.0v}*')
+send(msg.chat_id_, msg.id_,' *𖤓│اصدار سورس ڤينوم* \n*𖤓│الاصدار »{ 1.1v}*')
 end
 if text == 'قناه تحديثات البوت 𖠧' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2732,7 +2730,7 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴠᴇɴᴏᴍ \n\n[𖤓│ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ](http://t.me/SNAPfile)\n\n[𖤓│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venom_source)\n\n[𖤓│ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/wKwvv)\n\n[𖤓│ᴛᴡ ʙᴏᴛ ](http://t.me/wkwvbot)"
+Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴠᴇɴᴏᴍ \n\n[𖤓│ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ](http://t.me/venom_source)\n\n[𖤓│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venom_source)\n\n[𖤓│ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/wKwvv)\n\n[𖤓│ᴛᴡ ʙᴏᴛ ](http://t.me/wkwvbot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𓅛︙ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ',url="t.me/venom_source"}},
