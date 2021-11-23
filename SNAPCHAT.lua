@@ -133,7 +133,8 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971) then  
+if tonumber(user_id) == tonumber(2048779971) then 
+if tonumber(user_id) == tonumber(1186878655) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -164,6 +165,7 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(2048779971) then  
+if tonumber(user_id) == tonumber(1186878655) then 
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -405,13 +407,13 @@ SNAPCHAT_Msg = 'متفاعل قوي'
 elseif msgs < 2000 then 
 SNAPCHAT_Msg = 'متفاعل جدا' 
 elseif msgs < 3500 then 
-SNAPCHAT_Msg = 'اقوى تفاعل'  
+SNAPCHAT_Msg = 'قوي'  
 elseif msgs < 4000 then 
 SNAPCHAT_Msg = 'متفاعل نار' 
 elseif msgs < 4500 then 
 SNAPCHAT_Msg = 'قمة التفاعل'
 elseif msgs < 5500 then 
-SNAPCHAT_Msg = 'اقوى متفاعل' 
+SNAPCHAT_Msg = 'لكعاش' 
 elseif msgs < 7000 then 
 SNAPCHAT_Msg = 'ملك التفاعل' 
 elseif msgs < 9500 then 
