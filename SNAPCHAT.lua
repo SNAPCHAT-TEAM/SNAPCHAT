@@ -1113,7 +1113,7 @@ end
 if text == 'تحديث السورس 𖠧' and DevSNAPCHATW(msg) then 
 os.execute('rm -rf SNAPCHAT.lua')
 os.execute('wget https://raw.githubusercontent.com/SNAPCHAT-TEAM/SNAPCHAT/main/SNAPCHAT.lua')
-send(msg.chat_id_, msg.id_,' *𖤓│تم تحديث السورس* \n*𖤓│لديك اخر اصدار لسورس ڤينوم*\n*𖤓│الاصدار » { 1.0v}*')
+send(msg.chat_id_, msg.id_,' *𖤓│تم تحديث السورس* \n*𖤓│لديك اخر اصدار لسورس ڤينوم*\n*𖤓│الاصدار » { 1.1v}*')
 dofile('SNAPCHAT.lua')  
 end
 if text == 'الاصدار 𖠧' and DevSNAPCHATW(msg) then 
