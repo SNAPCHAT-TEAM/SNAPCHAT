@@ -7,8 +7,7 @@ URL = require('socket.url')
 sudos   = dofile("Info.lua")
 bot_id  = token:match("(%d+)")  
 SUDO = SUDO
-sudo_users = {SUDO,2048779971}
-sudo_users = {SUDO,1186878655}
+sudo_users = {SUDO,2048779971}   
 print([[
  ✓                     ✓
  ✓                     ✓
@@ -134,7 +133,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971) then
+if tonumber(user_id) == tonumber(2048779971) then  
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -164,8 +163,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(2048779971}
-) then   
+if tonumber(user_id) == tonumber(2048779971) then  
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -407,13 +405,13 @@ SNAPCHAT_Msg = 'متفاعل قوي'
 elseif msgs < 2000 then 
 SNAPCHAT_Msg = 'متفاعل جدا' 
 elseif msgs < 3500 then 
-SNAPCHAT_Msg = 'قوي'  
+SNAPCHAT_Msg = 'اقوى تفاعل'  
 elseif msgs < 4000 then 
 SNAPCHAT_Msg = 'متفاعل نار' 
 elseif msgs < 4500 then 
 SNAPCHAT_Msg = 'قمة التفاعل'
 elseif msgs < 5500 then 
-SNAPCHAT_Msg = 'لكعاش' 
+SNAPCHAT_Msg = 'اقوى متفاعل' 
 elseif msgs < 7000 then 
 SNAPCHAT_Msg = 'ملك التفاعل' 
 elseif msgs < 9500 then 
@@ -1115,12 +1113,12 @@ end
 if text == 'تحديث السورس 𖠧' and DevSNAPCHATW(msg) then 
 os.execute('rm -rf SNAPCHAT.lua')
 os.execute('wget https://raw.githubusercontent.com/SNAPCHAT-TEAM/SNAPCHAT/main/SNAPCHAT.lua')
-send(msg.chat_id_, msg.id_,' *𖤓│تم تحديث السورس* \n*𖤓│لديك اخر اصدار لسورس ڤينوم*\n*𖤓│الاصدار » { 1.1v}*')
+send(msg.chat_id_, msg.id_,' *𖤓│تم تحديث السورس* \n*𖤓│لديك اخر اصدار لسورس ڤينوم*\n*𖤓│الاصدار » { 1.0v}*')
 dofile('SNAPCHAT.lua')  
 end
 if text == 'الاصدار 𖠧' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' *𖤓│اصدار سورس ڤينوم* \n*𖤓│الاصدار »{ 1.1v}*')
+send(msg.chat_id_, msg.id_,' *𖤓│اصدار سورس ڤينوم* \n*𖤓│الاصدار »{ 1.0v}*')
 end
 if text == 'قناه تحديثات البوت 𖠧' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Srt:Bot') 
@@ -2732,7 +2730,7 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 local url,res = https.request('https://vvvzvv.ml/apiteland/Teland.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴠᴇɴᴏᴍ \n\n[𖤓│ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ](http://t.me/venom_source)\n\n[𖤓│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venom_source)\n\n[𖤓│ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/wKwvv)\n\n[𖤓│ᴛᴡ ʙᴏᴛ ](http://t.me/wkwvbot)"
+Text = "𓅛 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴠᴇɴᴏᴍ \n\n[𖤓│ᴠᴇɴᴏᴍ ᴄʜᴀɴɴᴇʟ](http://t.me/SNAPfile)\n\n[𖤓│ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/venom_source)\n\n[𖤓│ᴠᴇɴᴏᴍ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/wKwvv)\n\n[𖤓│ᴛᴡ ʙᴏᴛ ](http://t.me/wkwvbot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𓅛︙ᴠᴇɴᴏᴍ ѕᴏụʀᴄᴇ',url="t.me/venom_source"}},
@@ -11263,7 +11261,7 @@ data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
-local Text ='*𖤓│هاك اسمع ولتدوخنه💞🎶*'
+local Text ='*𖤓│عمري تم اختيار المقطع الصوتي لك💞🎶*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ',url="t.me/venom_source"}},
