@@ -9,9 +9,14 @@ bot_id  = token:match("(%d+)")
 SUDO = SUDO
 sudo_users = {SUDO,2048779971}   
 print([[
- ✓                     ✓
- ✓                     ✓
-> CH › @venomfile
+ __      ________ _   _  ____  __  __ 
+ \ \    / /  ____| \ | |/ __ \|  \/  |
+  \ \  / /| |__  |  \| | |  | | \  / |
+   \ \/ / |  __| | . ` | |  | | |\/| |
+    \  /  | |____| |\  | |__| | |  | |
+     \/   |______|_| \_|\____/|_|  |_|
+                                      
+> CH › @venom_source
 ~> DEVELOPER › @wKwvv
 ]])
 if io.open("library/redis.lua","r") then
@@ -738,7 +743,7 @@ Chat_Type = 'GroupBot'
 end
 end
 if database:get(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "الغاء" or text == "الغاء 𖠧" then   
+if text == "الغاء" or text == "الغاء ᥀" then   
 send(msg.chat_id_, msg.id_," 𖤓│تم الغاء الاذاعه")
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -789,26 +794,26 @@ end
 if DevSNAPCHATW(msg) then
 local bl = ' *𖤓│اهلا عزيزي آلمـطـور*\n*𖤓│آنت آلمـطـور آلآسـآسـي للبوت*\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n*𖤓│تسـتطـيع‌‏ آلتحگم باوامر البوت*\n*𖤓│من خلاال الكيبورت خاص بك*\n*𖤓│قناة سورس البوت *[اضغط هنا](t.me/venom_source)'
 local keyboard = {
-{'الاحصائيات 𖠧','قناه تحديثات البوت 𖠧'},
-{'تعطيل التواصل 𖠧','تفعيل التواصل 𖠧'},
-{'ضع اسم للبوت 𖠧','المطورين 𖠧','قائمه العام 𖠧'},
-{'الثانويين 𖠧','مسح الثانويين 𖠧'},
-{'المشتركين 𖠧','الكروبات 𖠧'},
-{'ضع كليشه ستارت 𖠧','حذف كليشه ستارت 𖠧'},
-{'اذاعه 𖠧','اذاعه خاص 𖠧'},
-{'اذاعه بالتثبيت 𖠧','قائمه الكتم العام 𖠧'},
-{'تغير رساله الاشتراك','حذف رساله الاشتراك 𖠧','تغير الاشتراك'},
-{'اذاعه بالتوجيه 𖠧','اذاعه بالتوجيه خاص 𖠧'},
-{'تفعيل الاشتراك الاجباري 𖠧','تعطيل الاشتراك الاجباري 𖠧'},
-{'الاشتراك الاجباري 𖠧','وضع قناة الاشتراك 𖠧'},
-{'تفعيل البوت الخدمي 𖠧','تعطيل البوت الخدمي 𖠧'},
-{'تنظيف الكروبات 𖠧','تنظيف المشتركين 𖠧'},
-{'تفعيل النسخه التلقائيه 𖠧','تعطيل النسخه التلقائيه 𖠧'},
-{'تغيير المطور الاساسي 𖠧'}, 
-{'جلب نسخه الاحتياطيه 𖠧'},
-{'تحديث السورس 𖠧','الاصدار 𖠧'},
-{'معلومات السيرفر 𖠧'},
-{'الغاء 𖠧'},
+{'الاحصائيات ᥀','قناه تحديثات البوت ᥀'},
+{'تعطيل التواصل ᥀','تفعيل التواصل ᥀'},
+{'ضع اسم للبوت ᥀','المطورين ᥀','قائمه العام ᥀'},
+{'الثانويين ᥀','مسح الثانويين ᥀'},
+{'المشتركين ᥀','الكروبات ᥀'},
+{'ضع كليشه ستارت ᥀','حذف كليشه ستارت ᥀'},
+{'اذاعه ᥀','اذاعه خاص ᥀'},
+{'اذاعه بالتثبيت ᥀','قائمه الكتم العام ᥀'},
+{'تغير رساله الاشتراك','حذف رساله الاشتراك ᥀','تغير الاشتراك'},
+{'اذاعه بالتوجيه ᥀','اذاعه بالتوجيه خاص ᥀'},
+{'تفعيل الاشتراك الاجباري ᥀','تعطيل الاشتراك الاجباري ᥀'},
+{'الاشتراك الاجباري ᥀','وضع قناة الاشتراك ᥀'},
+{'تفعيل البوت الخدمي ᥀','تعطيل البوت الخدمي ᥀'},
+{'تنظيف الكروبات ᥀','تنظيف المشتركين ᥀'},
+{'تفعيل النسخه التلقائيه ᥀','تعطيل النسخه التلقائيه ᥀'},
+{'تغيير المطور الاساسي ᥀'}, 
+{'جلب نسخه الاحتياطيه ᥀'},
+{'تحديث السورس ᥀','الاصدار ᥀'},
+{'معلومات السيرفر ᥀'},
+{'الغاء ᥀'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -838,25 +843,25 @@ send_inline_Media(msg.chat_id_,"sendPhoto","photo",v,inline)
 end
 end
 if #list == 0 then
-send(msg.chat_id_, msg.id_,"𖠧 لا يوجد صور ممنوعه"  )  
+send(msg.chat_id_, msg.id_,"᥀ لا يوجد صور ممنوعه"  )  
 return false
 end
 Zs = {
 {{text = '- اضغط هنا .',callback_data="delallph"..Sf}},
 }
-send_inlin_key(msg.chat_id_,"*𖠧 هل تريد الغاء منع كل الصور؟*",Zs,msg.id_)
+send_inlin_key(msg.chat_id_,"*᥀ هل تريد الغاء منع كل الصور؟*",Zs,msg.id_)
 end
 if text and text:match("^/start msg(.*)$") then
 sl = text:match("^/start msg(.*)$")
 local list = database:smembers(bot_id.."SNAPCHAT1:List:Filter"..sl)
-t = "\n𖠧 قائمة الكلمات الممنوعه \n"
+t = "\n᥀ قائمة الكلمات الممنوعه \n"
 for k,v in pairs(list) do
 if v then
 t = t..""..k.."- ["..v.."]\n"
 end
 end
 if #list == 0 then
-t = "*𖠧 لا يوجد كلمات ممنوعه*"
+t = "*᥀ لا يوجد كلمات ممنوعه*"
 end
 send(msg.chat_id_, msg.id_,t)  
 end  
@@ -872,11 +877,11 @@ send_inline_Media(msg.chat_id_,"sendanimation","animation",v,inline)
 end
 end
 if #list == 0 then
-t = "*𖠧 لا يوجد متحركات ممنوعه*"
+t = "*᥀ لا يوجد متحركات ممنوعه*"
 send(msg.chat_id_, msg.id_,t)  
 return false
 end
-ZsText = "*𖠧 هل تريد الغاء منع كل المتحركات؟*"
+ZsText = "*᥀ هل تريد الغاء منع كل المتحركات؟*"
 Zs = {
 {{text = '- اضغط هنا .',callback_data="delallanimation"..Sf}},
 }
@@ -894,11 +899,11 @@ send_inline_Media(msg.chat_id_,"sendSticker","Sticker",v,inline)
 end
 end
 if #list == 0 then
-t = "*𖠧 لا يوجد الملصق ممنوعه*"
+t = "*᥀ لا يوجد الملصق ممنوعه*"
 send(msg.chat_id_, msg.id_,t)  
 return false
 end
-ZsText = "*𖠧 هل تريد الغاء منع كل الملصقات؟*"
+ZsText = "*᥀ هل تريد الغاء منع كل الملصقات؟*"
 Zs = {
 {{text = '- اضغط هنا .',callback_data="delallSticker"..Sf}},
 }
@@ -983,19 +988,19 @@ end,nil)
 end,nil)
 end,nil)
 end 
-if text == 'تفعيل النسخه التلقائيه 𖠧' and SudoBot(msg) then  
+if text == 'تفعيل النسخه التلقائيه ᥀' and SudoBot(msg) then  
 send(msg.chat_id_, msg.id_,"*𖤓│تم تفعيل النسخه الاحتياطيه التلقائيه*") 
 database:del(bot_id.."AutoFile")
 end
-if text == 'تعطيل النسخه التلقائيه 𖠧' and SudoBot(msg) then  
+if text == 'تعطيل النسخه التلقائيه ᥀' and SudoBot(msg) then  
 send(msg.chat_id_, msg.id_,"*𖤓│تم تعطيل النسخه الاحتياطيه التلقائيه*") 
 database:set(bot_id.."AutoFile",true) 
 end
-if text == 'مسح الثانويين 𖠧' and SudoBot(msg) then  
+if text == 'مسح الثانويين ᥀' and SudoBot(msg) then  
 database:del(bot_id.."DEV:Sudo:T")
 send(msg.chat_id_, msg.id_, "\n*𖤓│تم مسح قائمة المطورين الثانويين* ")
 end
-if text == 'الثانويين 𖠧' and SudoBot(msg) then
+if text == 'الثانويين ᥀' and SudoBot(msg) then
 local list = database:smembers(bot_id.."DEV:Sudo:T")
 t = "\n*𖤓│قائمة مطورين الثانويين للبوت* \n *◐•━━━━━━ ᴠɴ ━━━━━━━•◐* \n"
 for k,v in pairs(list) do
@@ -1011,7 +1016,7 @@ t = "*𖤓│لا يوجد مطورين ثانويين*"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == 'تفعيل التواصل 𖠧' and DevSNAPCHATW(msg) then  
+if text == 'تفعيل التواصل ᥀' and DevSNAPCHATW(msg) then  
 if database:get(bot_id..'Tuasl:Bots') then
 database:del(bot_id..'Tuasl:Bots') 
 Text = '\n *𖤓│تم تفعيل التواصل* ' 
@@ -1020,7 +1025,7 @@ Text = '\n *𖤓│بالتاكيد تم تفعيل التواصل* '
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل التواصل 𖠧' and DevSNAPCHATW(msg) then  
+if text == 'تعطيل التواصل ᥀' and DevSNAPCHATW(msg) then  
 if not database:get(bot_id..'Tuasl:Bots') then
 database:set(bot_id..'Tuasl:Bots',true) 
 Text = '\n *𖤓│تم تعطيل التواصل*' 
@@ -1029,7 +1034,7 @@ Text = '\n *𖤓│بالتاكيد تم تعطيل التواصل*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل البوت الخدمي 𖠧' and DevSNAPCHATW(msg) then  
+if text == 'تفعيل البوت الخدمي ᥀' and DevSNAPCHATW(msg) then  
 if database:get(bot_id..'Free:Bots') then
 database:del(bot_id..'Free:Bots') 
 Text = '\n *𖤓│تم تفعيل البوت الخدمي* ' 
@@ -1038,7 +1043,7 @@ Text = '\n *𖤓│بالتاكيد تم تفعيل البوت الخدمي* '
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل البوت الخدمي 𖠧' and DevSNAPCHATW(msg) then  
+if text == 'تعطيل البوت الخدمي ᥀' and DevSNAPCHATW(msg) then  
 if not database:get(bot_id..'Free:Bots') then
 database:set(bot_id..'Free:Bots',true) 
 Text = '\n *𖤓│تم تعطيل البوت الخدمي*' 
@@ -1048,7 +1053,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء' or text == 'الغاء 𖠧' then   
+if text == 'الغاء' or text == 'الغاء ᥀' then   
 send(msg.chat_id_, msg.id_,' *𖤓│الغاء حفظ كليشه ستارت*')
 database:del(bot_id..'Start:Bots') 
 return false
@@ -1058,16 +1063,16 @@ send(msg.chat_id_, msg.id_,' *𖤓│تم حفظ كليشه ستارت*')
 database:del(bot_id..'Start:Bots') 
 return false
 end
-if text == 'ضع كليشه ستارت 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'ضع كليشه ستارت ᥀' and DevSNAPCHATW(msg) then 
 database:set(bot_id..'Start:Bots',true) 
 send(msg.chat_id_, msg.id_,' *𖤓│ارسل لي الكليشه الان*')
 return false
 end
-if text == 'حذف كليشه ستارت 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'حذف كليشه ستارت ᥀' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' *𖤓│تم حذف كليشه ستارت*')
 end
-if text == 'معلومات السيرفر 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'معلومات السيرفر ᥀' and DevSNAPCHATW(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -1103,54 +1108,54 @@ end
 end,nil)
 end
 end
-if text =='تغيير المطور الاساسي 𖠧' and SudoBot(msg) then
+if text =='تغيير المطور الاساسي ᥀' and SudoBot(msg) then
 send(msg.chat_id_, msg.id_,'*𖤓│ ارسل ايدي المطور الاساسي الجديد*')
 database:set(bot_id..'Ed:DevBots',true) 
 end
-if text =='تغيير المطور الاساسي 𖠧' and not SudoBot(msg) then
+if text =='تغيير المطور الاساسي ᥀' and not SudoBot(msg) then
 send(msg.chat_id_, msg.id_,'*𖤓│لا يمكنك تغيير المطور الاساسي*')
 end
-if text == 'تحديث السورس 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'تحديث السورس ᥀' and DevSNAPCHATW(msg) then 
 os.execute('rm -rf SNAPCHAT.lua')
 os.execute('wget https://raw.githubusercontent.com/SNAPCHAT-TEAM/SNAPCHAT/main/SNAPCHAT.lua')
 send(msg.chat_id_, msg.id_,' *𖤓│تم تحديث السورس* \n*𖤓│لديك اخر اصدار لسورس ڤينوم*\n*𖤓│الاصدار » { 1.0v}*')
 dofile('SNAPCHAT.lua')  
 end
-if text == 'الاصدار 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'الاصدار ᥀' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' *𖤓│اصدار سورس ڤينوم* \n*𖤓│الاصدار »{ 1.0v}*')
 end
-if text == 'قناه تحديثات البوت 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'قناه تحديثات البوت ᥀' and DevSNAPCHATW(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' 𖤓│[تحديثات البوت](t.me/venom_source) \n𖤓│[قناه السورس](t.me/SNAPfile)')
 end
-if text == "ضع اسم للبوت 𖠧" and DevSNAPCHATW(msg) then  
+if text == "ضع اسم للبوت ᥀" and DevSNAPCHATW(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
 send(msg.chat_id_, msg.id_," *𖤓│ارسل اليه الاسم الان* ")
 return false
 end
-if text == 'الاحصائيات 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'الاحصائيات ᥀' and DevSNAPCHATW(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' الاحصائيات 𖠧 \n'..' *𖤓│عدد الكروبات » {'..Groups..'}'..'*\n *𖤓│عدد المشتركين » {'..Users..'}*'
+Text = ' الاحصائيات ᥀ \n'..' *𖤓│عدد الكروبات » {'..Groups..'}'..'*\n *𖤓│عدد المشتركين » {'..Users..'}*'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'المشتركين 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'المشتركين ᥀' and DevSNAPCHATW(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = '\n *𖤓│المشتركين» {`'..Users..'`}*'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'الكروبات 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'الكروبات ᥀' and DevSNAPCHATW(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = '\n *𖤓│الكروبات» {`'..Groups..'`}*'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == ("المطورين 𖠧") and DevSNAPCHATW(msg) then
+if text == ("المطورين ᥀") and DevSNAPCHATW(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
 t = "\n *𖤓│قائمة المطورين* \n*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*\n"
 for k,v in pairs(list) do
@@ -1166,7 +1171,7 @@ t = " *𖤓│لا يوجد مطورين*"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("قائمه العام 𖠧") and DevSNAPCHATW(msg) then
+if text == ("قائمه العام ᥀") and DevSNAPCHATW(msg) then
 local list = database:smembers(bot_id..'GBan:User')
 t = "\n *𖤓│قائمه المحظورين عام* \n*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*\n"
 for k,v in pairs(list) do
@@ -1183,7 +1188,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("قائمه الكتم العام 𖠧") and DevSNAPCHATW(msg) then
+if text == ("قائمه الكتم العام ᥀") and DevSNAPCHATW(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
 t = "\n *𖤓│قائمة المكتومين عام* \n*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*\n"
 for k,v in pairs(list) do
@@ -1200,35 +1205,35 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text=="اذاعه خاص 𖠧" and msg.reply_to_message_id_ == 0 and DevSNAPCHATW(msg) then 
+if text=="اذاعه خاص ᥀" and msg.reply_to_message_id_ == 0 and DevSNAPCHATW(msg) then 
 database:setex(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," *𖤓│ارسل الان اذاعتك؟* \n*𖤓│للخروج ارسل الغاء* ")
 return false
 end 
-if text=="اذاعه 𖠧" and msg.reply_to_message_id_ == 0 and DevSNAPCHATW(msg) then 
+if text=="اذاعه ᥀" and msg.reply_to_message_id_ == 0 and DevSNAPCHATW(msg) then 
 database:setex(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," *𖤓│ارسل الان اذاعتك؟* \n*𖤓│للخروج ارسل الغاء* ")
 return false
 end  
-if text=="اذاعه بالتثبيت 𖠧" and msg.reply_to_message_id_ == 0 and DevSNAPCHATW(msg) then 
+if text=="اذاعه بالتثبيت ᥀" and msg.reply_to_message_id_ == 0 and DevSNAPCHATW(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," *𖤓│ارسل الان اذاعتك؟* \n*𖤓│للخروج ارسل الغاء* ")
 return false
 end 
-if text=="اذاعه بالتوجيه 𖠧" and msg.reply_to_message_id_ == 0  and DevSNAPCHATW(msg) then 
+if text=="اذاعه بالتوجيه ᥀" and msg.reply_to_message_id_ == 0  and DevSNAPCHATW(msg) then 
 database:setex(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," *𖤓│ارسل لي التوجيه الان*")
 return false
 end 
-if text=="اذاعه بالتوجيه خاص 𖠧" and msg.reply_to_message_id_ == 0  and DevSNAPCHATW(msg) then 
+if text=="اذاعه بالتوجيه خاص ᥀" and msg.reply_to_message_id_ == 0  and DevSNAPCHATW(msg) then 
 database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," 𖤓│ارسل لي التوجيه الان")
 return false
 end 
-if text == 'جلب نسخه الاحتياطيه 𖠧' and DevSNAPCHATW(msg) then 
+if text == 'جلب نسخه الاحتياطيه ᥀' and DevSNAPCHATW(msg) then 
 GetFile_Bot(msg)
 end
-if text == "تنظيف المشتركين 𖠧" and DevSNAPCHATW(msg) then 
+if text == "تنظيف المشتركين ᥀" and DevSNAPCHATW(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1264,7 +1269,7 @@ end,nil)
 end
 return false
 end
-if text == "تنظيف الكروبات 𖠧" and DevSNAPCHATW(msg) then 
+if text == "تنظيف الكروبات ᥀" and DevSNAPCHATW(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1438,7 +1443,7 @@ end,nil)
 end
 end
 if database:get(bot_id..'Set:Name:Bot'..msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء 𖠧' then   
+if text == 'الغاء' or text == 'الغاء ᥀' then   
 send(msg.chat_id_, msg.id_," *𖤓│تم الغاء حفظ اسم البوت*")
 database:del(bot_id..'Set:Name:Bot'..msg.sender_user_id_) 
 return false  
@@ -1449,7 +1454,7 @@ send(msg.chat_id_, msg.id_, " *𖤓│تم حفظ الاسم*")
 return false
 end 
 if database:get(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء 𖠧' then   
+if text == 'الغاء' or text == 'الغاء ᥀' then   
 send(msg.chat_id_, msg.id_," *𖤓│تم الغاء الاذاعه للخاص*")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1482,7 +1487,7 @@ database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end
 
 if database:get(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء 𖠧' then   
+if text == 'الغاء' or text == 'الغاء ᥀' then   
 send(msg.chat_id_, msg.id_," *𖤓│تم الغاء الاذاعه*")
 database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1515,7 +1520,7 @@ database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_i
 end
 
 if database:get(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء 𖠧' then   
+if text == 'الغاء' or text == 'الغاء ᥀' then   
 send(msg.chat_id_, msg.id_," *𖤓│تم الغاء الاذاعه*")
 database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -1535,7 +1540,7 @@ database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_
 end 
 end
 if database:get(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء 𖠧' then   
+if text == 'الغاء' or text == 'الغاء ᥀' then   
 send(msg.chat_id_, msg.id_," *𖤓│تم الغاء الاذاعه*")
 database:del(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -1735,7 +1740,7 @@ end
 end 
 --------------------------------------------------------------------------------------------------------------
 if text and database:get(bot_id..'lock:Fshar'..msg.chat_id_) and not Special(msg) then 
-list = {"كس","كسمك","كسختك","عير","كسخالتك","خرا بالله","عير بالله","كسخواتكم","كحاب","مناويج","مناويج","كحبه","ابن الكحبه","فرخ","فروخ","طيزك","طيزختك"}
+list = {"كس","كسمك","كسختك","عير","كسخالتك","خرا بالله","عير بالله","كسخواتكم","كحاب","مناويج","مناويج","كحبه","ابن الكحبه","فرخ","فروخ","طيزك","طيزختك","طيز","زب","عير"}
 for k,v in pairs(list) do
 print(string.find(text,v))
 if string.find(text,v) ~= nil then
@@ -1745,7 +1750,7 @@ end
 end
 end
 if text and database:get(bot_id..'lock:Fars'..msg.chat_id_) and not Special(msg) then 
-list = {"ڄ","گ","که","پی","خسته","برم","راحتی","بیام","بپوشم","گرمه","چه","چ","ڬ","ٺ","چ","ڇ","ڿ","ڀ","ڎ","ݫ","ژ","ڟ","ݜ","ڸ","پ","۴","زدن","دخترا","دیوث","مک","زدن","خالی بند","عزیزم خوبی","سلامت باشی","میخوام","خوببی","ميدم","کی اومدی","خوابیدین"}
+list = {"ڄ","گ","که","پی","خسته","برم","راحتی","بیام","بپوشم","گرمه","چه","چ","ڬ","ٺ","چ","ڇ","ڿ","ڀ","ڎ","ݫ","ژ","ڟ","ݜ","ڸ","پ","۴","زدن","دخترا","دیوث","مک","زدن","خالی بند","عزیزم خوبی","سلامت باشی","میخوام","خوببی","ميدم","کی اومدی","خوابیدین","چ"}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_}) 
@@ -2433,17 +2438,17 @@ database:setex(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id
 send(msg.chat_id_, msg.id_, ' *𖤓│حسنآ ارسل لي النص الذي تريده*')
 return false  
 end
-if text == "حذف رساله الاشتراك 𖠧" and DevSNAPCHATW(msg) then  
+if text == "حذف رساله الاشتراك ᥀" and DevSNAPCHATW(msg) then  
 database:del(bot_id..'text:ch:user')
 send(msg.chat_id_, msg.id_, " *𖤓│تم مسح رساله الاشتراك* ")
 return false  
 end
-if text and text:match("^وضع قناة الاشتراك 𖠧$") and DevSNAPCHATW(msg) then  
+if text and text:match("^وضع قناة الاشتراك ᥀$") and DevSNAPCHATW(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, ' *𖤓│حسنآ ارسل لي معرف القناة*')
 return false  
 end
-if text == "تفعيل الاشتراك الاجباري 𖠧" and DevSNAPCHATW(msg) then  
+if text == "تفعيل الاشتراك الاجباري ᥀" and DevSNAPCHATW(msg) then  
 if database:get(bot_id..'add:ch:id') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_," *𖤓│الاشتراك الاجباري مفعل* \n*𖤓│على القناة »* ["..addchusername.."]")
@@ -2453,13 +2458,13 @@ send(msg.chat_id_, msg.id_," *𖤓│اهلا عزيزي المطور* \n*𖤓�
 end
 return false  
 end
-if text == "تعطيل الاشتراك الاجباري 𖠧" and DevSNAPCHATW(msg) then  
+if text == "تعطيل الاشتراك الاجباري ᥀" and DevSNAPCHATW(msg) then  
 database:del(bot_id..'add:ch:id')
 database:del(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, " *𖤓│تم تعطيل الاشتراك الاجباري* ")
 return false  
 end
-if text == "الاشتراك الاجباري 𖠧" and DevSNAPCHATW(msg) then  
+if text == "الاشتراك الاجباري ᥀" and DevSNAPCHATW(msg) then  
 if database:get(bot_id..'add:ch:username') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, " *𖤓│تم تفعيل الاشتراك الاجباري* \n*𖤓│على القناة »* ["..addchusername.."]")
@@ -2848,7 +2853,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'  *𖤓│عذࢪا عليڪ الاشتࢪاڪ في قناه البوت* \n*𖤓│اشتࢪڪ هنا عمࢪي* ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  *??│عذࢪا عليڪ الاشتࢪاڪ في قناه البوت* \n*𖤓│اشتࢪڪ هنا عمࢪي* ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -8103,7 +8108,7 @@ end
 if text == "الرابط" then 
 local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_)
 if not status_Link then
-send(msg.chat_id_, msg.id_," *𖠧 الرابط معطل*") 
+send(msg.chat_id_, msg.id_," *᥀ الرابط معطل*") 
 return false  
 end
 local link = database:get(bot_id.."Private:Group:Link"..msg.chat_id_)
@@ -8115,7 +8120,7 @@ if linkgpp.ok == true then
 database:set(bot_id.."Private:Group:Link"..msg.chat_id_,linkgpp.result)
 linkgp = '𝒍𝒊𝒏𝒌 𝒈𝒓𝒐𝒖𝒑  ??\n*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*\n ['..linkgpp.result..']'
 else
-linkgp = ' *𖠧 لا يوجد رابط ارسل ضع رابط*'
+linkgp = ' *᥀ لا يوجد رابط ارسل ضع رابط*'
 end  
 send(msg.chat_id_, msg.id_,linkgp)  
 end
@@ -8950,7 +8955,7 @@ end
 end
 DeleteMessage(msg.chat_id_,msgm2)
 end,nil)  
-send(msg.chat_id_, msg.id_,"*تم تنظيف الميديا 𖠧*")
+send(msg.chat_id_, msg.id_,"*تم تنظيف الميديا ᥀*")
 end
 if (msg.content_.animation_) or (msg.content_.photo_) or (msg.content_.video_) or (msg.content_.document) or (msg.content_.sticker_) and msg.reply_to_message_id_ == 0 then
 database:sadd(bot_id.."EEF69:allM"..msg.chat_id_, msg.id_)
@@ -9135,7 +9140,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'  *𖠧︙عذࢪا عليڪ الاشتࢪاڪ في قناه البوت* \n*𖠧︙اشتࢪڪ هنا عمࢪي* ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  *᥀︙عذࢪا عليڪ الاشتࢪاڪ في قناه البوت* \n*᥀︙اشتࢪڪ هنا عمࢪي* ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -9171,7 +9176,7 @@ send(msg.chat_id_, msg.id_," *𖤓│لا تستطيع تنزيل مطور ال�
 return false 
 end
 if Can_or_NotCan(result.sender_user_id_,msg.chat_id_) ~= false then
-send(msg.chat_id_, msg.id_,"\n *𖠧 تم تنزيل الشخص من جميع الرتب *")
+send(msg.chat_id_, msg.id_,"\n *᥀ تم تنزيل الشخص من جميع الرتب *")
 else
 send(msg.chat_id_, msg.id_,"\n *𖤓│ عذرا العضو لايملك رتبه* \n")
 end
@@ -9229,7 +9234,7 @@ send(msg.chat_id_, msg.id_," *𖤓│لا تستطيع تنزيل مطور ال�
 return false 
 end
 if Can_or_NotCan(result.id_,msg.chat_id_) ~= false then
-send(msg.chat_id_, msg.id_,"\n *𖠧 تم تنزيل الشخص من جميع الرتب *")
+send(msg.chat_id_, msg.id_,"\n *᥀ تم تنزيل الشخص من جميع الرتب *")
 else
 send(msg.chat_id_, msg.id_,"\n *𖤓│ عذرا العضو لايملك رتبه* \n")
 end
@@ -9757,7 +9762,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."botss:Amir:List:Rd:Sudo")
-text = "\nقائمة ردود المتعدده\n*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*\n"
+text = "\nقائمة ردود المتعدده\n \n"
 for k,v in pairs(list) do
 db = "رساله "
 text = text..""..k.." => {"..v.."} => {"..db.."}\n"
@@ -9870,7 +9875,7 @@ if text == 'الاحصائيات' then
 if Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' الاحصائيات 𖠧 \n'..'*𖤓│عدد الكروبات » {'..Groups..'}'..'*\n*𖤓│ عدد المشتركين » {'..Users..'}*'
+Text = ' الاحصائيات ᥀ \n'..'*𖤓│عدد الكروبات » {'..Groups..'}'..'*\n*𖤓│ عدد المشتركين » {'..Users..'}*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 return false
@@ -10817,7 +10822,7 @@ if Json_Info.result.can_restrict_members == true then
 restrict = 'ꪜ' else restrict = '✘' end
 if Json_Info.result.can_promote_members == true then
 promote = 'ꪜ' else promote = '✘' end 
-send(msg.chat_id_,msg.id_,'\n *𖤓│اهلا عزيزي البوت هنا ادمن*'..'\n*𖤓│وصلاحياته هي ↓* \n*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*'..'\n*𖤓│تغير معلومات الكروب ↞ ❴ '..info..' ❵'..'*\n*𖤓│حذف الرسائل ↞ ❴ '..delete..' ❵'..'*\n*𖤓│حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'*\n*𖤓│دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'*\n*𖤓│تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'*\n*𖤓│اضافة مشرفين جدد ↞ ❴ '..promote..' ❵*')   
+send(msg.chat_id_,msg.id_,'\n *𖤓│اهلا عزيزي البوت هنا ادمن*'..'\n*𖤓│وصلاحياته هي ↓* \n '..'\n*𖤓│تغير معلومات الكروب ↞ ❴ '..info..' ❵'..'*\n*𖤓│حذف الرسائل ↞ ❴ '..delete..' ❵'..'*\n*𖤓│حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'*\n*𖤓│دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'*\n*𖤓│تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'*\n*𖤓│اضافة مشرفين جدد ↞ ❴ '..promote..' ❵*')   
 end
 end
 end
@@ -11049,25 +11054,25 @@ return false
 end
 local help_text = database:get(bot_id..'help_text')
 Text = [[
-*𖠧اهلا انتツفي اوامر البوت𖠧*
+*᥀اهلا انتツفي اوامر البوت᥀*
 ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ
-*𖠧م1 ◂ اوامر الحمايه*
-*𖠧م2 ◂ اوامر تعطيل ~ تفعيل*
-*𖠧م3 ◂ اوامر ضع ~ اضف*
-*𖠧م4 ◂ اوامر مسح ~ حذف*
-*𖠧م5 ◂ اوامر تنزيل+رفع+التغير*
-*𖠧م6 ◂ اوامر الكروب*
-*𖠧م7 ◂ اوامر التحشيش*
-*𖠧م8 ◂ اوامر مطور البوت*
-*𖠧م9 ◂ اوامر مطور الاساسي* 
-*𖠧م10 ◂ اوامر الاعضاء*
+*᥀م1 ◂ اوامر الحمايه*
+*᥀م2 ◂ اوامر تعطيل ~ تفعيل*
+*᥀م3 ◂ اوامر ضع ~ اضف*
+*᥀م4 ◂ اوامر مسح ~ حذف*
+*᥀م5 ◂ اوامر تنزيل+رفع+التغير*
+*᥀م6 ◂ اوامر الكروب*
+*᥀م7 ◂ اوامر التحشيش*
+*᥀م8 ◂ اوامر مطور البوت*
+*᥀م9 ◂ اوامر مطور الاساسي* 
+*᥀م10 ◂ اوامر الاعضاء*
 ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ
 [⍆ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11115,13 +11120,13 @@ if text and text:match("^زخرفه (.*)$") then
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n*𖤓│قائمه الزخرفه* \nٴ𖠧∫ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ𖠧∫○ٴ \n"
+t = "\n*𖤓│قائمه الزخرفه* \nٴ᥀∫ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ᥀∫○ٴ \n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ𖠧∫ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ𖠧∫○ٴ\n𖤓│[ᴠɴ𝙀𝙉𝘿_ѕᴏụʀᴄᴇ](t.me/venom_source) ')
+send(msg.chat_id_, msg.id_, t..'ٴ᥀∫ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ᥀∫○ٴ\n𖤓│[ᴠɴ𝙀𝙉𝘿_ѕᴏụʀᴄᴇ](t.me/venom_source) ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '*𖤓│تم تعطيل الابراج*')
@@ -11320,13 +11325,13 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'رابط الحذف' or text == 'رابط حذف' then
 t =[[
-*رابط الحذف في جميع مواقع التواصل 𖠧
+*رابط الحذف في جميع مواقع التواصل ᥀
 فكر قبل لا تتسرع وتروح*
 ٴ*◐•━━━━━━ ᴠɴ ━━━━━━━•◐*ٴ
- *𖠧 رابط حذف*  [Telegram](https://my.telegram.org/auth?to=delete) ܁
- *𖠧 رابط حذف* [instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/) ܁
- *𖠧 رابط حذف* [Facebook](https://www.facebook.com/help/deleteaccount) ܁
- *𖠧 رابط حذف* [Snspchat](https://accounts.SNAPchat.com/accounts/login?continue=https%3A%2F%2Faccounts.SNAPchat.com%2Faccounts%2Fdeleteaccount) ܁
+ *᥀ رابط حذف*  [Telegram](https://my.telegram.org/auth?to=delete) ܁
+ *᥀ رابط حذف* [instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/) ܁
+ *᥀ رابط حذف* [Facebook](https://www.facebook.com/help/deleteaccount) ܁
+ *᥀ رابط حذف* [Snspchat](https://accounts.SNAPchat.com/accounts/login?continue=https%3A%2F%2Faccounts.SNAPchat.com%2Faccounts%2Fdeleteaccount) ܁
 ]]
 send(msg.chat_id_, msg.id_,t) 
 return false
@@ -11401,50 +11406,50 @@ return https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMe
 end
 if DAata == '/help1' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اوامر الحمايه اتبع مايلي ...*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ قفل + فتح ← الامر…*
-*𖠧~⪼ ← { بالتقيد ، بالطرد ، بالكتم }*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الروابط*
-*𖠧~⪼ المعرف*
-*𖠧~⪼ التاك*
-*𖠧~⪼ الشارحه*
-*𖠧~⪼ التعديل*
-*𖠧~⪼ التثبيت*
-*𖠧~⪼ المتحركه*
-*𖠧~⪼ الملفات*
-*𖠧~⪼ الصور*
-*𖠧~⪼ التفليش*
-*𖠧~⪼ الاباحي*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الماركداون*
-*𖠧~⪼ البوتات*
-*𖠧~⪼ التكرار*
-*𖠧~⪼ الكلايش*
-*𖠧~⪼ السيلفي*
-*𖠧~⪼ الملصقات*
-*𖠧~⪼ الفيديو*
-*𖠧~⪼ الانلاين*
-*𖠧~⪼ الدردشه*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ التوجيه*
-*𖠧~⪼ الاغاني*
-*𖠧~⪼ الصوت*
-*𖠧~⪼ الجهات*
-*𖠧~⪼ الاشعارات*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اوامر الحمايه اتبع مايلي ...*
+ 
+*᥀~⪼ قفل + فتح ← الامر…*
+*᥀~⪼ ← { بالتقيد ، بالطرد ، بالكتم }*
+ 
+*᥀~⪼ الروابط*
+*᥀~⪼ المعرف*
+*᥀~⪼ التاك*
+*᥀~⪼ الشارحه*
+*᥀~⪼ التعديل*
+*᥀~⪼ التثبيت*
+*᥀~⪼ المتحركه*
+*᥀~⪼ الملفات*
+*᥀~⪼ الصور*
+*᥀~⪼ التفليش*
+*᥀~⪼ الاباحي*
+ 
+*᥀~⪼ الماركداون*
+*᥀~⪼ البوتات*
+*᥀~⪼ التكرار*
+*᥀~⪼ الكلايش*
+*᥀~⪼ السيلفي*
+*᥀~⪼ الملصقات*
+*᥀~⪼ الفيديو*
+*᥀~⪼ الانلاين*
+*᥀~⪼ الدردشه*
+ 
+*᥀~⪼ التوجيه*
+*᥀~⪼ الاغاني*
+*᥀~⪼ الصوت*
+*᥀~⪼ الجهات*
+*᥀~⪼ الاشعارات*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '2᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11452,58 +11457,58 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help2' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي …*
-*𖠧~⪼ اوامر تفعيل وتعطيل …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ تفعيل ~ تعطيل + امر …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اطردني*
-*𖠧~⪼ صيح*
-*𖠧~⪼ ضافني*
-*𖠧~⪼ الرابط* 
-*𖠧~⪼ الحظر*
-*𖠧~⪼ الرفع*
-*𖠧~⪼ الحظر*
-*𖠧~⪼ الرفع *
-*𖠧~⪼ الايدي*
-*𖠧~⪼ الالعاب*
-*𖠧~⪼ ردود المطور*
-*𖠧~⪼ الترحيب*
-*𖠧~⪼ ردود المدير*
-*𖠧~⪼ الردود*
-*𖠧~⪼ ردود البوت*
-*𖠧~⪼ الرسائل اليوميه*
-*𖠧~⪼ التحقق*
-*𖠧~⪼ اطردني*
-*𖠧~⪼ اوامر التحشيش*
-*𖠧~⪼ صورتي*
-*𖠧~⪼ زخرفه*
-*𖠧~⪼ حساب العمر*
-*𖠧~⪼ الابراج*
-*𖠧~⪼ تنبيه الاسماء*
-*𖠧~⪼ تنبيه المعرف*
-*𖠧~⪼ تنبيه الصور*
-*𖠧~⪼ التوحيد*
-*𖠧~⪼ الكتم الاسم*
-*𖠧~⪼ نسبه الرجوله* 
-*𖠧~⪼ نسبه الانوثه*
-*𖠧~⪼ نسبه الكره*
-*𖠧~⪼ نسبه الحب*
-*𖠧~⪼ بلاي*
-*𖠧~⪼ ءall*
-*𖠧~⪼ لحساب العمر بالتنسيق التالي مثال : احسب 1996/1/17*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي …*
+*᥀~⪼ اوامر تفعيل وتعطيل …*
+ 
+*᥀~⪼ تفعيل ~ تعطيل + امر …*
+ 
+*᥀~⪼ اطردني*
+*᥀~⪼ صيح*
+*᥀~⪼ ضافني*
+*᥀~⪼ الرابط* 
+*᥀~⪼ الحظر*
+*᥀~⪼ الرفع*
+*᥀~⪼ الحظر*
+*᥀~⪼ الرفع *
+*᥀~⪼ الايدي*
+*᥀~⪼ الالعاب*
+*᥀~⪼ ردود المطور*
+*᥀~⪼ الترحيب*
+*᥀~⪼ ردود المدير*
+*᥀~⪼ الردود*
+*᥀~⪼ ردود البوت*
+*᥀~⪼ الرسائل اليوميه*
+*᥀~⪼ التحقق*
+*᥀~⪼ اطردني*
+*᥀~⪼ اوامر التحشيش*
+*᥀~⪼ صورتي*
+*᥀~⪼ زخرفه*
+*᥀~⪼ حساب العمر*
+*᥀~⪼ الابراج*
+*᥀~⪼ تنبيه الاسماء*
+*᥀~⪼ تنبيه المعرف*
+*᥀~⪼ تنبيه الصور*
+*᥀~⪼ التوحيد*
+*᥀~⪼ الكتم الاسم*
+*᥀~⪼ نسبه الرجوله* 
+*᥀~⪼ نسبه الانوثه*
+*᥀~⪼ نسبه الكره*
+*᥀~⪼ نسبه الحب*
+*᥀~⪼ بلاي*
+*᥀~⪼ ءall*
+*᥀~⪼ لحساب العمر بالتنسيق التالي مثال : احسب 1996/1/17*
+  
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11511,34 +11516,34 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help3' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي …*
-*𖠧~⪼ اوامر الوضع ~ اضف …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اضف / حذف ← رد*
-*𖠧~⪼ اضف / حذف ← رد متعدد*
-*𖠧~⪼ اضف / حذف ← صلاحيه*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ ضع + امر …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اسم*
-*𖠧~⪼ رابط*
-*𖠧~⪼ ترحيب*
-*𖠧~⪼ قوانين*
-*𖠧~⪼ صوره*
-*𖠧~⪼ وصف*
-*𖠧~⪼ تكرار + عدد*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي …*
+*᥀~⪼ اوامر الوضع ~ اضف …*
+ 
+*᥀~⪼ اضف / حذف ← رد*
+*᥀~⪼ اضف / حذف ← رد متعدد*
+*᥀~⪼ اضف / حذف ← صلاحيه*
+  
+*᥀~⪼ ضع + امر …*
+ 
+*᥀~⪼ اسم*
+*᥀~⪼ رابط*
+*᥀~⪼ ترحيب*
+*᥀~⪼ قوانين*
+*᥀~⪼ صوره*
+*᥀~⪼ وصف*
+*᥀~⪼ تكرار + عدد*
+  
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11546,44 +11551,44 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help4' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي …*
-*𖠧~⪼ اوامر مسح / الحذف ← امر*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ مسح + امر …*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الايدي*
-*𖠧~⪼ الادمنيه*
-*𖠧~⪼ المميزين*
-*𖠧~⪼ ردود المدير*
-*𖠧~⪼ المدراء* 
-*𖠧~⪼ المنشئين* 
-*𖠧~⪼ الاساسين*
-*𖠧~⪼ الاسماء المكتومه*
-*𖠧~⪼ البوتات*
-*𖠧~⪼ امسح*
-*𖠧~⪼ صلاحيه*
-*𖠧~⪼ قائمه منع المتحركات*
-*𖠧~⪼ قائمه منع الصور*
-*𖠧~⪼ قائمه منع الملصقات*
-*𖠧~⪼ مسح قائمه المنع* 
-*𖠧~⪼ المحذوفين*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ حذف + امر ...*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ امر *
-*𖠧~⪼ الاوامر المضافه*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي …*
+*᥀~⪼ اوامر مسح / الحذف ← امر*
+ 
+*᥀~⪼ مسح + امر …*
+  
+*᥀~⪼ الايدي*
+*᥀~⪼ الادمنيه*
+*᥀~⪼ المميزين*
+*᥀~⪼ ردود المدير*
+*᥀~⪼ المدراء* 
+*᥀~⪼ المنشئين* 
+*᥀~⪼ الاساسين*
+*᥀~⪼ الاسماء المكتومه*
+*᥀~⪼ البوتات*
+*᥀~⪼ امسح*
+*᥀~⪼ صلاحيه*
+*᥀~⪼ قائمه منع المتحركات*
+*᥀~⪼ قائمه منع الصور*
+*᥀~⪼ قائمه منع الملصقات*
+*᥀~⪼ مسح قائمه المنع* 
+*᥀~⪼ المحذوفين*
+ 
+*᥀~⪼ حذف + امر ...*
+ 
+*᥀~⪼ امر *
+*᥀~⪼ الاوامر المضافه*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11591,46 +11596,46 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help5' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي …*
-*𖠧~⪼ اوامر تنزيل ورفع …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ مميز*
-*𖠧~⪼ ادمن*
-*𖠧~⪼ مدير*
-*𖠧~⪼ منشئ*
-*𖠧~⪼ منشئ اساسي*
-*𖠧~⪼ مالك*
-*𖠧~⪼ الادمنيه*
-*𖠧~⪼ ادمن بالكروب*
-*𖠧~⪼ ادمن بكل الصلاحيات*
-*𖠧~⪼ القيود*
-*𖠧~⪼ تنزيل جميع الرتب*
-*𖠧~⪼ تنزيل الكل* 
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اوامر التغير …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ تغير رد المطور + اسم*
-*𖠧~⪼ تغير رد المالك + اسم*
-*𖠧~⪼ تغير رد منشئ الاساسي + اسم*
-*𖠧~⪼ تغير رد المنشئ + اسم*
-*𖠧~⪼ تغير رد المدير + اسم*
-*𖠧~⪼ تغير رد الادمن + اسم*
-*𖠧~⪼ تغير رد المميز + اسم*
-*𖠧~⪼ تغير رد العضو + اسم*
-*𖠧~⪼ تغير امر الاوامر*
-*𖠧~⪼ تغير امر م1 ~ الئ م10*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي …*
+*᥀~⪼ اوامر تنزيل ورفع …*
+ 
+*᥀~⪼ مميز*
+*᥀~⪼ ادمن*
+*᥀~⪼ مدير*
+*᥀~⪼ منشئ*
+*᥀~⪼ منشئ اساسي*
+*᥀~⪼ مالك*
+*᥀~⪼ الادمنيه*
+*᥀~⪼ ادمن بالكروب*
+*᥀~⪼ ادمن بكل الصلاحيات*
+*᥀~⪼ القيود*
+*᥀~⪼ تنزيل جميع الرتب*
+*᥀~⪼ تنزيل الكل* 
+ 
+*᥀~⪼ اوامر التغير …*
+ 
+*᥀~⪼ تغير رد المطور + اسم*
+*᥀~⪼ تغير رد المالك + اسم*
+*᥀~⪼ تغير رد منشئ الاساسي + اسم*
+*᥀~⪼ تغير رد المنشئ + اسم*
+*᥀~⪼ تغير رد المدير + اسم*
+*᥀~⪼ تغير رد الادمن + اسم*
+*᥀~⪼ تغير رد المميز + اسم*
+*᥀~⪼ تغير رد العضو + اسم*
+*᥀~⪼ تغير امر الاوامر*
+*᥀~⪼ تغير امر م1 ~ الئ م10*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11638,65 +11643,65 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help6' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي …*
-*𖠧~⪼ اوامر المجموعه …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الاوامر … كالتالي*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ استعاده الاوامر*
-*𖠧~⪼ تحويل كالاتي~⪼ صور : ملصق : صوت : بصمه*
-*𖠧~⪼ صيح ~ تاك ~ المميزين : الادمنيه : المدراء : المنشئين : المنشئين الاساسين : للمالك*
-*𖠧~⪼ كشف القيود *
-*𖠧~⪼ تعين الايدي*
-*𖠧~⪼ تغير الايدي*
-*𖠧~⪼ الحساب + ايدي الحساب*
-*𖠧~⪼ تنظيف + العدد*
-*𖠧~⪼ تنزيل الكل*
-*𖠧~⪼ تنزيل جميع الرتب*
-*𖠧~⪼ منع + برد*
-*𖠧~⪼~ الصور + متحركه + ملصق ~*
-*𖠧~⪼ حظر ~ كتم ~ تقيد ~ طرد*
-*𖠧~⪼ المحظورين ~ المكتومين ~ المقيدين*
-*𖠧~⪼ الغاء كتم + حظر + تقيد ~ بالرد و معرف و ايدي*
-*𖠧~⪼ تقيد ~ كتم + الرقم + ساعه*
-*𖠧~⪼ تقيد ~ كتم + الرقم + يوم*
-*𖠧~⪼ تقيد ~ كتم + الرقم + دقيقه*
-*𖠧~⪼ تثبيت ~ الغاء تثبيت*
-*𖠧~⪼ الترحيب*
-*𖠧~⪼ الغاء تثبيت الكل* 
-*𖠧~⪼ كشف البوتات*
-*𖠧~⪼ الصلاحيات*
-*𖠧~⪼ كشف ~ برد ← بمعرف ← ايدي*
-*𖠧~⪼ تاك للكل*
-*𖠧~⪼ اضف لقب + لقب*
-*𖠧~⪼ حذف اللقب*
-*𖠧~⪼ تاك للمشرفين*
-*𖠧~⪼ اعدادات المجموعه*
-*𖠧~⪼ عدد الكروب*
-*𖠧~⪼ ردود المدير*
-*𖠧~⪼ اسم بوت + الرتبه*
-*𖠧~⪼ الاوامر المضافه*
-*𖠧~⪼ وضع توحيد + توحيد*
-*𖠧~⪼ تعين عدد الكتم + رقم*
-*𖠧~⪼ التوحيد*
-*𖠧~⪼ كتم اسم + اسم*
-*𖠧~⪼ قائمه المنع*
-*𖠧~⪼ نسبه الحب* 
-*𖠧~⪼ نسبه رجوله*
-*𖠧~⪼ نسبه الكره*
-*𖠧~⪼ نسبه الانوثه*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي …*
+*᥀~⪼ اوامر المجموعه …*
+ 
+*᥀~⪼ الاوامر … كالتالي*
+  
+*᥀~⪼ استعاده الاوامر*
+*᥀~⪼ تحويل كالاتي~⪼ صور : ملصق : صوت : بصمه*
+*᥀~⪼ صيح ~ تاك ~ المميزين : الادمنيه : المدراء : المنشئين : المنشئين الاساسين : للمالك*
+*᥀~⪼ كشف القيود *
+*᥀~⪼ تعين الايدي*
+*᥀~⪼ تغير الايدي*
+*᥀~⪼ الحساب + ايدي الحساب*
+*᥀~⪼ تنظيف + العدد*
+*᥀~⪼ تنزيل الكل*
+*᥀~⪼ تنزيل جميع الرتب*
+*᥀~⪼ منع + برد*
+*᥀~⪼~ الصور + متحركه + ملصق ~*
+*᥀~⪼ حظر ~ كتم ~ تقيد ~ طرد*
+*᥀~⪼ المحظورين ~ المكتومين ~ المقيدين*
+*᥀~⪼ الغاء كتم + حظر + تقيد ~ بالرد و معرف و ايدي*
+*᥀~⪼ تقيد ~ كتم + الرقم + ساعه*
+*᥀~⪼ تقيد ~ كتم + الرقم + يوم*
+*᥀~⪼ تقيد ~ كتم + الرقم + دقيقه*
+*᥀~⪼ تثبيت ~ الغاء تثبيت*
+*᥀~⪼ الترحيب*
+*᥀~⪼ الغاء تثبيت الكل* 
+*᥀~⪼ كشف البوتات*
+*᥀~⪼ الصلاحيات*
+*᥀~⪼ كشف ~ برد ← بمعرف ← ايدي*
+*᥀~⪼ تاك للكل*
+*᥀~⪼ اضف لقب + لقب*
+*᥀~⪼ حذف اللقب*
+*᥀~⪼ تاك للمشرفين*
+*᥀~⪼ اعدادات المجموعه*
+*᥀~⪼ عدد الكروب*
+*᥀~⪼ ردود المدير*
+*᥀~⪼ اسم بوت + الرتبه*
+*᥀~⪼ الاوامر المضافه*
+*᥀~⪼ وضع توحيد + توحيد*
+*᥀~⪼ تعين عدد الكتم + رقم*
+*᥀~⪼ التوحيد*
+*᥀~⪼ كتم اسم + اسم*
+*᥀~⪼ قائمه المنع*
+*᥀~⪼ نسبه الحب* 
+*᥀~⪼ نسبه رجوله*
+*᥀~⪼ نسبه الكره*
+*᥀~⪼ نسبه الانوثه*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11704,54 +11709,54 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help7' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ الاوامر التحشيش …*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← الامࢪ*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← مطي* 
-*𖠧~⪼ تاك للمطايه*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← صخل*
-*𖠧~⪼ تاك لصخوله*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← جلب*
-*𖠧~⪼ تاك لجلاب*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← قرد *
-*𖠧~⪼ تاك لقروده*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← بقره*
-*𖠧~⪼ تاك لبقرات*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← حصان*
-*𖠧~⪼ تاك لحصونه*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← طلي*
-*𖠧~⪼ تاك لطليان*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← زاحف* 
-*𖠧~⪼ تاك لزواحف*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← جريذي*
-*𖠧~⪼ تاك لجريذيه*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← الحات*
-*𖠧~⪼ تاك للحات*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ رفع + تنزيل ← الحاته*
-*𖠧~⪼ تاك للحاتات*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ الاوامر التحشيش …*
+ 
+*᥀~⪼ رفع + تنزيل ← الامࢪ*
+ 
+*᥀~⪼ رفع + تنزيل ← مطي* 
+*᥀~⪼ تاك للمطايه*
+ 
+*᥀~⪼ رفع + تنزيل ← صخل*
+*᥀~⪼ تاك لصخوله*
+ 
+*᥀~⪼ رفع + تنزيل ← جلب*
+*᥀~⪼ تاك لجلاب*
+ 
+*᥀~⪼ رفع + تنزيل ← قرد *
+*᥀~⪼ تاك لقروده*
+ 
+*᥀~⪼ رفع + تنزيل ← بقره*
+*᥀~⪼ تاك لبقرات*
+ 
+*᥀~⪼ رفع + تنزيل ← حصان*
+*᥀~⪼ تاك لحصونه*
+ 
+*᥀~⪼ رفع + تنزيل ← طلي*
+*᥀~⪼ تاك لطليان*
+ 
+*᥀~⪼ رفع + تنزيل ← زاحف* 
+*᥀~⪼ تاك لزواحف*
+ 
+*᥀~⪼ رفع + تنزيل ← جريذي*
+*᥀~⪼ تاك لجريذيه*
+ 
+*᥀~⪼ رفع + تنزيل ← الحات*
+*᥀~⪼ تاك للحات*
+ 
+*᥀~⪼ رفع + تنزيل ← الحاته*
+*᥀~⪼ تاك للحاتات*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11759,30 +11764,30 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help8' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼اوامر المطورين* 
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ تفعيل ← تعطيل* 
-*𖠧~⪼ المجموعات ← المشتركين ← الاحصائيات*
-*𖠧~⪼ رفع ← تنزيل منشئ اساسي*
-*𖠧~⪼ مسح الاساسين ← المنشئين الاساسين*
-*𖠧~⪼ مسح المنشئين ← المنشئين*
-*𖠧~⪼ رفع ⇠ تنزيل مالك*
-*𖠧~⪼ مسح قائمه المالك* 
-*𖠧~⪼ اسم ~⪼ غادر + غادر*
-*𖠧~⪼ اذاعه* 
-*𖠧~⪼ ردود المطور *
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼اوامر المطورين* 
+  
+*᥀~⪼ تفعيل ← تعطيل* 
+*᥀~⪼ المجموعات ← المشتركين ← الاحصائيات*
+*᥀~⪼ رفع ← تنزيل منشئ اساسي*
+*᥀~⪼ مسح الاساسين ← المنشئين الاساسين*
+*᥀~⪼ مسح المنشئين ← المنشئين*
+*᥀~⪼ رفع ⇠ تنزيل مالك*
+*᥀~⪼ مسح قائمه المالك* 
+*᥀~⪼ اسم ~⪼ غادر + غادر*
+*᥀~⪼ اذاعه* 
+*᥀~⪼ ردود المطور *
+  
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11790,83 +11795,83 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help9' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي √*
-*𖠧~⪼ اوامر مطور الاساسي...↓*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ تفعيل*
-*𖠧~⪼ تعطيل*
-*𖠧~⪼ مسح الاساسين*
-*𖠧~⪼ المنشئين الاساسين*
-*𖠧~⪼ رفع ⇠ تنزيل منشئ اساسي*
-*𖠧~⪼ مسح المطورين*
-*𖠧~⪼ رفع ⇠ تنزيل مالك* 
-*𖠧~⪼ المطورين*
-*𖠧~⪼ رفع ⇠ تنزيل مطور*
-*𖠧~⪼ رفع ~⪼ تنزيل مطور ثانوي*
-*𖠧~⪼ الثانويين ~⪼ مسح الثانويين*
-*𖠧~⪼ تفعيل ~⪼ تعطيل الاضافات*
-*ٴ◐•━━━━━━ 𝑺?? ━━━━━━━•◐*
-*𖠧~⪼ اسم البوت + غادر*
-*𖠧~⪼ غادر*
-*𖠧~⪼ اسم بوت + الرتبه*
-*𖠧~⪼ تحديث السورس*
-*𖠧~⪼ حضر عام*
-*𖠧~⪼ كتم عام*
-*𖠧~⪼ الغاء العام*
-𖠧~⪼ قائمه العام*
-*𖠧~⪼ مسح قائمه العام*
-*𖠧~⪼ جلب نسخه الاحتياطيه*
-*𖠧~⪼ رفع نسخه الاحتياطيه*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ المتجر* 
-*𖠧~⪼ متجر الملفات*
-*𖠧~⪼ الملفات*
-*𖠧~⪼ مسح الملفات*
-*𖠧~⪼ تعطيل + تفعيل + اسم ملف*
- *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اذاعه خاص*
-*𖠧~⪼ اذاعه*
-*𖠧~⪼ اذاعه بالتوجيه*
-*𖠧~⪼ اذاعه بالتوجيه خاص*
-*𖠧~⪼ اذاعه بالتثبيت*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ جلب نسخه الاحتياطيه*
-*𖠧~⪼ رفع نسخه احتياطيه*
-*𖠧~⪼ ضع عدد الاعضاء + العدد*
-*𖠧~⪼ ضع كليشه المطور*
-*𖠧~⪼ تفعيل/تعطيل الاذاعه*
-*𖠧~⪼ تفعيل/تعطيل البوت الخدمي*
-*𖠧~⪼ تفعيل/تعطيل التواصل*
-*𖠧~⪼ تغير اسم البوت*
-*𖠧~⪼ اضف/حذف رد للكل*
-*𖠧~⪼ ردود المطور*
-*𖠧~⪼ مسح ردود المطور*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الاشتراك الاجباري*
-*𖠧~⪼ تعطيل الاشتراك الاجباري*
-*𖠧~⪼ تفعيل الاشتراك الاجباري*
-*𖠧~⪼ حذف رساله الاشتراك*
-*𖠧~⪼ تغير رساله الاشتراك*
-*𖠧~⪼ تغير الاشتراك*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الاحصائيات*
-*𖠧~⪼ المشتركين*
-*𖠧~⪼ المجموعات* 
-*𖠧~⪼ تفعيل/تعطيل المغادره*
-*𖠧~⪼ تنظيف المشتركين*
-*𖠧~⪼ تنظيف الكروبات*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي √*
+*᥀~⪼ اوامر مطور الاساسي...↓*
+ 
+*᥀~⪼ تفعيل*
+*᥀~⪼ تعطيل*
+*᥀~⪼ مسح الاساسين*
+*᥀~⪼ المنشئين الاساسين*
+*᥀~⪼ رفع ⇠ تنزيل منشئ اساسي*
+*᥀~⪼ مسح المطورين*
+*᥀~⪼ رفع ⇠ تنزيل مالك* 
+*᥀~⪼ المطورين*
+*᥀~⪼ رفع ⇠ تنزيل مطور*
+*᥀~⪼ رفع ~⪼ تنزيل مطور ثانوي*
+*᥀~⪼ الثانويين ~⪼ مسح الثانويين*
+*᥀~⪼ تفعيل ~⪼ تعطيل الاضافات*
+
+*᥀~⪼ اسم البوت + غادر*
+*᥀~⪼ غادر*
+*᥀~⪼ اسم بوت + الرتبه*
+*᥀~⪼ تحديث السورس*
+*᥀~⪼ حضر عام*
+*᥀~⪼ كتم عام*
+*᥀~⪼ الغاء العام*
+᥀~⪼ قائمه العام*
+*᥀~⪼ مسح قائمه العام*
+*᥀~⪼ جلب نسخه الاحتياطيه*
+*᥀~⪼ رفع نسخه الاحتياطيه*
+  
+*᥀~⪼ المتجر* 
+*᥀~⪼ متجر الملفات*
+*᥀~⪼ الملفات*
+*᥀~⪼ مسح الملفات*
+*᥀~⪼ تعطيل + تفعيل + اسم ملف*
+  
+*᥀~⪼ اذاعه خاص*
+*᥀~⪼ اذاعه*
+*᥀~⪼ اذاعه بالتوجيه*
+*᥀~⪼ اذاعه بالتوجيه خاص*
+*᥀~⪼ اذاعه بالتثبيت*
+ 
+*᥀~⪼ جلب نسخه الاحتياطيه*
+*᥀~⪼ رفع نسخه احتياطيه*
+*᥀~⪼ ضع عدد الاعضاء + العدد*
+*᥀~⪼ ضع كليشه المطور*
+*᥀~⪼ تفعيل/تعطيل الاذاعه*
+*᥀~⪼ تفعيل/تعطيل البوت الخدمي*
+*᥀~⪼ تفعيل/تعطيل التواصل*
+*᥀~⪼ تغير اسم البوت*
+*᥀~⪼ اضف/حذف رد للكل*
+*᥀~⪼ ردود المطور*
+*᥀~⪼ مسح ردود المطور*
+ 
+*᥀~⪼ الاشتراك الاجباري*
+*᥀~⪼ تعطيل الاشتراك الاجباري*
+*᥀~⪼ تفعيل الاشتراك الاجباري*
+*᥀~⪼ حذف رساله الاشتراك*
+*᥀~⪼ تغير رساله الاشتراك*
+*᥀~⪼ تغير الاشتراك*
+ 
+*᥀~⪼ الاحصائيات*
+*᥀~⪼ المشتركين*
+*᥀~⪼ المجموعات* 
+*᥀~⪼ تفعيل/تعطيل المغادره*
+*᥀~⪼ تنظيف المشتركين*
+*᥀~⪼ تنظيف الكروبات*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11874,45 +11879,45 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help10' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
-*𖠧~⪼ اهلا بك عزيزي √*
-*𖠧~⪼ اوامر الاعضاء كتالي…↓*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ عرض معلوماتك ↑↓*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ ايديي ← اسمي* 
-*𖠧~⪼ تفاعلي اليوم ← تفاعله اليوم*
-*𖠧~⪼ رسايلي ← مسح رسايلي* 
-*𖠧~⪼ رتبتي ← سحكاتي* 
-*𖠧~⪼ مسح سحكاتي ← المنشئ* 
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اوآمر المجموعه ↑↓*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ الرابط ← القوانين – الترحيب*
-*𖠧~⪼ ايدي ← اطردني* 
-*𖠧~⪼ اسمي ← المطور*  
-*𖠧~⪼ كشف ~ بالرد بالمعرف*
-  *ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ اسم البوت + الامر ↑↓*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧~⪼ بوسه بالرد* 
-*𖠧~⪼ مصه بالرد*
-*𖠧~⪼ رزله بالرد* 
-*𖠧~⪼ شنو رئيك بهذا بالرد*
-*𖠧~⪼ شنو رئيك بهاي بالرد*
-*𖠧~⪼ تحب هذا*
-*𖠧~⪼ راسلني*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+*᥀~⪼ اهلا بك عزيزي √*
+*᥀~⪼ اوامر الاعضاء كتالي…↓*
+ 
+*᥀~⪼ عرض معلوماتك ↑↓*
+ 
+*᥀~⪼ ايديي ← اسمي* 
+*᥀~⪼ تفاعلي اليوم ← تفاعله اليوم*
+*᥀~⪼ رسايلي ← مسح رسايلي* 
+*᥀~⪼ رتبتي ← سحكاتي* 
+*᥀~⪼ مسح سحكاتي ← المنشئ* 
+ 
+*᥀~⪼ اوآمر المجموعه ↑↓*
+ 
+*᥀~⪼ الرابط ← القوانين – الترحيب*
+*᥀~⪼ ايدي ← اطردني* 
+*᥀~⪼ اسمي ← المطور*  
+*᥀~⪼ كشف ~ بالرد بالمعرف*
+   
+*᥀~⪼ اسم البوت + الامر ↑↓*
+ 
+*᥀~⪼ بوسه بالرد* 
+*᥀~⪼ مصه بالرد*
+*᥀~⪼ رزله بالرد* 
+*᥀~⪼ شنو رئيك بهذا بالرد*
+*᥀~⪼ شنو رئيك بهاي بالرد*
+*᥀~⪼ تحب هذا*
+*᥀~⪼ راسلني*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
@@ -11920,30 +11925,30 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 if DAata == '/help' then
 if not Mod(data) then
-local notText = '𖠧 عذرا الاوامر هذه لا تخصك'
+local notText = '᥀ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
 local Teext =[[
 *اهلا انتツفي اوامر البوت*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
-*𖠧م1 ◂ اوامر الحمايه*
-*𖠧م2 ◂ اوامر تعطيل ~ تفعيل*
-*𖠧م3 ◂ اوامر ضع ~ اضف*
-*𖠧م4 ◂ اوامر مسح ~ حذف*
-*𖠧م5 ◂ اوامر تنزيل+رفع+التغير*
-*𖠧م6 ◂ اوامر الكروب*
-*𖠧م7 ◂ اوامر التحشيش*
-*𖠧م8 ◂ اوامر مطور البوت*
-*𖠧م9 ◂ اوامر مطور الاساسي* 
-*𖠧م10 ◂ اوامر الاعضاء*
-*ٴ◐•━━━━━━ ᴠɴ ━━━━━━━•◐*
+ 
+*᥀م1 ◂ اوامر الحمايه*
+*᥀م2 ◂ اوامر تعطيل ~ تفعيل*
+*᥀م3 ◂ اوامر ضع ~ اضف*
+*᥀م4 ◂ اوامر مسح ~ حذف*
+*᥀م5 ◂ اوامر تنزيل+رفع+التغير*
+*᥀م6 ◂ اوامر الكروب*
+*᥀م7 ◂ اوامر التحشيش*
+*᥀م8 ◂ اوامر مطور البوت*
+*᥀م9 ◂ اوامر مطور الاساسي* 
+*᥀م10 ◂ اوامر الاعضاء*
+ 
 [⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ](t.me/venom_source) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❶', callback_data="/help1"},{text = '❷', callback_data="/help2"},{text = '❸', callback_data="/help3"},{text = '❹', callback_data="/help4"},{text = '❺', callback_data="/help5"}},
-{{text = '❻', callback_data="/help6"},{text = '❼', callback_data="/help7"},{text = '❽', callback_data="/help8"},{text = '❾', callback_data="/help9"},{text = '❿', callback_data="/help10"}},
+{{text = '1᥀', callback_data="/help1"},{text = '3᥀', callback_data="/help2"},{text = '3᥀', callback_data="/help3"},{text = '4᥀', callback_data="/help4"},{text = '5᥀', callback_data="/help5"}},
+{{text = '6᥀', callback_data="/help6"},{text = '7᥀', callback_data="/help7"},{text = '8᥀', callback_data="/help8"},{text = '9᥀', callback_data="/help9"},{text = '10᥀', callback_data="/help10"}},
 {{text = '𓅛 ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ', url="t.me/venom_source"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11952,7 +11957,7 @@ if DAata and DAata:match("^animation(.*)$") then
 idch = DAata:match("-100(%d+)")
 local idchci = "-100"..idch
 local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
-local Text ="*𖠧 تم الغاء منعها بنجاح*"
+local Text ="*᥀ تم الغاء منعها بنجاح*"
 inline = {
 {{text = '𓅛 sᴏᴜʀᴄᴇ 𝗌𝗇𝖺𝗉',url='http://t.me/venom_source'}},
 }
@@ -11963,7 +11968,7 @@ end
 if DAata and DAata:match("^pito(.*)$") then  
 local idchci = database:get(bot_id.."Filter:msg")
 local photo = DAata:match("^pito(.*)$")
-local Text ="*𖠧 تم الغاء منعها بنجاح*"
+local Text ="*᥀ تم الغاء منعها بنجاح*"
 inline = {
 {{text = '𓅛 sᴏᴜʀᴄᴇ 𝗌𝗇𝖺𝗉',url='http://t.me/venom_source'}},
 }
@@ -11975,7 +11980,7 @@ if DAata and DAata:match("^Sticker(.*)$") then
 idch = DAata:match("-100(%d+)")
 local idchci = "-100"..idch
 local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
-local Text ="*𖠧 تم الغاء منعه بنجاح*"
+local Text ="*᥀ تم الغاء منعه بنجاح*"
 inline = {
 {{text = '𓅛 sᴏᴜʀᴄᴇ 𝗌𝗇𝖺𝗉',url='http://t.me/venom_source'}},
 }
@@ -11985,7 +11990,7 @@ database:srem(bot_id.."filtersteckr"..idchci,Sticker)
 end
 if DAata and DAata:match("^delallSticker(.*)$") then  
 local delallSticker = DAata:match("^delallSticker(.*)$")
-local Text ="*𖠧 تم الغاء منع كل المتحركات*"
+local Text ="*᥀ تم الغاء منع كل المتحركات*"
 inline = {
 {{text = '𓅛 sᴏᴜʀᴄᴇ 𝗌𝗇𝖺𝗉',url='http://t.me/venom_source'}},
 }
@@ -11998,7 +12003,7 @@ end
 end
 if DAata and DAata:match("^delallanimation(.*)$") then  
 local delallmation = DAata:match("^delallanimation(.*)$")
-local Text ="*𖠧 تم الغاء منع كل المتحركات*"
+local Text ="*᥀ تم الغاء منع كل المتحركات*"
 inline = {
 {{text = '𓅛 sᴏᴜʀᴄᴇ 𝗌𝗇𝖺𝗉',url='http://t.me/venom_source'}},
 }
@@ -12011,7 +12016,7 @@ end
 end
 if DAata and DAata:match("^delallph(.*)$") then  
 local delallph = DAata:match("^delallph(.*)$")
-local Text ="*𖠧 تم الغاء منع كل الصور*"
+local Text ="*᥀ تم الغاء منع كل الصور*"
 inline = {
 {{text = '𓅛 sᴏᴜʀᴄᴇ 𝗌𝗇𝖺𝗉',url='http://t.me/venom_source'}},
 }
