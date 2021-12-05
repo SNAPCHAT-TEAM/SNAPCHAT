@@ -11261,7 +11261,8 @@ data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
-local texting = {"هاك اسمع ولتدوخنه ","تفضل حبي","دزه لصاحبتك وكلها هذا ذوقي"}
+local text then
+local Text ='*✯│هاڪ اسمع ولتدوخنه *'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '⍆ ѕᴏụʀᴄᴇ ᴠᴇɴᴏᴍ',url="t.me/venom_source"}},
